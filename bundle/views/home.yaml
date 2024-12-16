@@ -1,0 +1,67 @@
+name: home
+definition:
+  wires:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: demo/blog.page
+        header:
+          - uesio/core.view:
+              view: demo/blog.header
+        content:
+          - uesio/sitekit.section_hero:
+              title: "Effortless AI-Powered Blogging"
+              subtitle: "Discover, Create, and Publish Content with Ease"
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.primary_dark
+                    text: Get Started
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.secondary_dark
+                    text: Learn more
+          - uesio/io.box:
+              components:
+                - uesio/sitekit.section_feature:
+                    title: Automated Content Generation
+                    subtitle: AI-Powered Writing
+                    description: Our AI assistant analyzes top articles and generates custom blog posts tailored to your audience.
+                - uesio/sitekit.section_feature:
+                    title: Seamless Workflow
+                    subtitle: Streamlined Blogging
+                    description: Easily search for relevant content, customize your posts, and publish with a few clicks.
+                - uesio/sitekit.section_feature:
+                    title: Personalized Recommendations
+                    subtitle: Content Discovery
+                    description: Our intelligent system suggests topics and articles based on your interests and audience preferences.
+          - uesio/sitekit.section_testimonial:
+              quote: This is the best blogging tool I've ever used. The content discovery and personalization features are truly impressive.
+              name: David Patel
+              title: Small Business Owner
+              avatar: uesio/sitekit.avatarpics
+              avatarPath: images/connie_forrester.jpg
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content_three_column
+              uesio.styleTokens:
+                root:
+                  - bg-white/80
+              content:
+                - uesio/sitekit.testimonial:
+                    quote: This blog app has completely transformed my content creation process. The AI-powered features make it a breeze to find and publish high-quality posts.
+                    name: Sarah Johnson
+                    title: Marketing Manager
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/sandy_burtrand.jpg
+                - uesio/sitekit.testimonial:
+                    quote: As a busy entrepreneur, I love how the blog app saves me time and effort. The automated writing assistance is a game-changer!
+                    name: Michael Chen
+                    title: CEO, Startup Ventures
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/sandy_burtrand.jpg
+                - uesio/sitekit.testimonial:
+                    quote: I was skeptical about AI-generated content at first, but this app has proven me wrong. The posts it creates are engaging and relevant to my audience.
+                    name: Emily Rodriguez
+                    title: Lifestyle Blogger
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/randy_billingston.jpg
+        footer:
+          - uesio/core.view:
+              view: demo/blog.footer

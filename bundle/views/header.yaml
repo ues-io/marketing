@@ -1,0 +1,34 @@
+name: header
+definition:
+  wires:
+  components:
+    - uesio/sitekit.header:
+        uesio.styleTokens:
+          root:
+            - bg-white/90
+        sticky: true
+        logo:
+          - uesio/io.image:
+              file: demo/blog.logo
+              filepath: ""
+              height: 44
+              signals:
+                - signal: "route/NAVIGATE"
+                  path: "home"
+        right:
+          - uesio/io.group:
+              components:
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.secondary_dark
+                    text: Home
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.secondary_dark
+                    text: Content Discovery
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.secondary_dark
+                    text: Content Creation
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.secondary_dark
+                    text: Pricing
+          - uesio/io.group:
+              components: ""

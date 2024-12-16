@@ -1,0 +1,20 @@
+name: public
+named: {}
+views:
+  demo/blog.footer: true
+  demo/blog.header: true
+  demo/blog.home: true
+collections: {}
+routes:
+  demo/blog.home: true
+files: {}
+bots: {}
+integrationActions: {}
+allowallbots: false
+allowallcollections: false
+allowallviews: false
+allowallroutes: false
+allowallfiles: true
+allowallintegrationactions: false
+modifyallrecords: false
+viewallrecords: false
