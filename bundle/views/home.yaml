@@ -96,7 +96,7 @@ definition:
                                 align: left
                                 uesio.styleTokens:
                                   root:
-                                    - pt-4
+                                    - pt-6
                             - uesio/io.text:
                                 text: • Use public LLMs to rehash topics towards your interest and industry related content.
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -104,7 +104,8 @@ definition:
                                 element: div
                                 align: left
                                 uesio.styleTokens:
-                                  root: []
+                                  root:
+                                    - pt-4
                             - uesio/io.text:
                                 text: "• Reference other authors or contributors automatically to respect copyrights and ownership. "
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -112,7 +113,8 @@ definition:
                                 element: div
                                 align: left
                                 uesio.styleTokens:
-                                  root: []
+                                  root:
+                                    - pt-4
                     swap: true
                     leftBackground: sky-200
                     rightBackground: sky-300
