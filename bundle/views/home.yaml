@@ -51,7 +51,7 @@ definition:
                                                 path: https://meetings.hubspot.com/mark2527
                                                 newtab: true
                                         - uesio/io.text:
-                                            text: Quick blog creation with the ability to search the internet for the most trending articles relating to a certain subjects and the a rehash to publish your own version of the most important topics relazted to your industry in minutes not hours.
+                                            text: Quick blog creation with the ability to search the internet for the most trending articles! UES.IO helps publish your own version of the most important topics related to your industry in minutes not hours.
                                             element: div
                                             align: left
                                             uesio.variant: uesio/sitekit.hero_subtitle
