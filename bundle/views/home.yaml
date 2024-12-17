@@ -172,7 +172,6 @@ definition:
             - z-10
             - top-0
             - bg-white
-          root:
-            - mt-2
+          root: []
     - uesio/core.view:
         view: demo/blog.footer
