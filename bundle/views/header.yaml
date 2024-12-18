@@ -10,8 +10,13 @@ definition:
                   - from-indigo-700
                   - to-violet-600
                   - bg-gradient-to-br
+                  - "[background-size:100%_500%]"
+                  - backdrop-blur
                   - pb-2
               sticky: true
+              menuSignals:
+                - signal: panel/TOGGLE
+                  panel: navmenu
               logo:
                 - uesio/io.box:
                     components:
@@ -107,3 +112,50 @@ definition:
                             root: []
                     uesio.styleTokens:
                       root: []
+  panels:
+    navmenu:
+      uesio.type: uesio/io.sidepanel
+      uesio.styleTokens:
+        blocker:
+          - z-20
+        icon:
+          - text-3xl
+          - text-slate-800
+          - p-6
+      components:
+        - uesio/io.group:
+            uesio.styleTokens:
+              root:
+                - grid-flow-row
+                - justify-center
+            components:
+              - uesio/io.button:
+                  uesio.variant: uesio/sitekit.primary_dark
+                  text: Finance
+                  signals:
+                    - signal: route/REDIRECT
+                      path: https://demo-kyc-prod.ues.io/home
+                      newtab: true
+              - uesio/io.button:
+                  uesio.variant: uesio/sitekit.primary_dark
+                  text: Sales
+                  signals:
+                    - signal: route/REDIRECT
+                      path: https://crm.ues.io/home
+                      newtab: true
+              - uesio/io.button:
+                  uesio.variant: uesio/sitekit.primary_dark
+                  text: Marketing
+                  signals:
+                    - signal: route/REDIRECT
+                      path: https://demo-blog-prod.ues.io/home
+                      newtab: true
+              - uesio/io.button:
+                  uesio.styleTokens:
+                    root: []
+                  uesio.variant: uesio/sitekit.primary_dark
+                  text: manufacturing
+                  signals:
+                    - signal: route/REDIRECT
+                      path: https://demo-cpq-prod.ues.io/home
+                      newtab: true
